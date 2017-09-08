@@ -5,8 +5,8 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := system/core/init
 LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
-LOCAL_SRC_FILES := init_falcon.cpp
-LOCAL_MODULE := libinit_falcon
+LOCAL_SRC_FILES := init_matissewifi.cpp
+LOCAL_MODULE := libinit_matissewifi
 LOCAL_STATIC_LIBRARIES := libbase
 
 include $(BUILD_STATIC_LIBRARY)

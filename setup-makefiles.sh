@@ -19,9 +19,9 @@
 set -e
 
 # Required!
-export DEVICE=falcon
+export DEVICE=matissewifi
 export DEVICE_COMMON=msm8226-common
-export VENDOR=motorola
+export VENDOR=samsung
 
 export DEVICE_BRINGUP_YEAR=2013
 

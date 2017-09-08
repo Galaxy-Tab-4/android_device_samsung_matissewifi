@@ -14,22 +14,22 @@
 # limitations under the License.
 
 # inherit from common msm8226-common
--include device/motorola/msm8226-common/BoardConfigCommon.mk
+-include device/samsung/msm8226-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/falcon
+DEVICE_PATH := device/samsung/matissewifi
 
 # Camera
 BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 
 # Kernel
-TARGET_KERNEL_CONFIG := falcon_defconfig
+TARGET_KERNEL_CONFIG := matissewifi_defconfig
 
 # Disable basic dexpreopt enabled from msm8226-common
 WITH_DEXPREOPT := false
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_falcon
-TARGET_RECOVERY_DEVICE_MODULES := libinit_falcon
+TARGET_INIT_VENDOR_LIB := libinit_matissewifi
+TARGET_RECOVERY_DEVICE_MODULES := libinit_matissewifi
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
@@ -43,4 +43,4 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 694288384
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/motorola/falcon/BoardConfigVendor.mk
+-include vendor/samsung/matissewifi/BoardConfigVendor.mk
