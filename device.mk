@@ -20,6 +20,9 @@ $(call inherit-product, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# We are a tablet, not a phone
+PRODUCT_CHARACTERISTICS := tablet
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio_platform_info.xml:system/etc/audio_platform_info.xml \
@@ -32,10 +35,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.target.rc
-
-# Sensors
-PRODUCT_PACKAGES += \
-    akmd8963
 
 # Wifi
 PRODUCT_COPY_FILES += \
